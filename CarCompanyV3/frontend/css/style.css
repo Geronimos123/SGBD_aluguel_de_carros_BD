@@ -1,0 +1,676 @@
+/* RESET */
+
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,address,em,img,strong,u,ol,ul,li,fieldset,form,label,legend,table,tbody,tfoot,thead,tr,th,td,main,article,aside, figure,figcaption,footer,header,nav,section,time,audio,video{
+    border:0;
+    font-size:100%;
+    font:inherit;
+    line-height: 1;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    letter-spacing: 1px;
+}
+html{scroll-behavior:smooth;}
+body{
+    background: #fff;
+    color:#000;
+    line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+    width:100%;
+}
+a,
+a:hover{
+    color:#000;
+    text-decoration:none;
+    cursor:pointer;
+}
+:focus{outline:0;}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+@media screen and (max-width:1024px){
+    .container{
+        max-width:100%;
+    }
+}
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,.col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12{
+    padding: 0;
+}
+
+/* CSS */
+
+/* NAV BAR */
+
+nav{
+    padding-top: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul a{
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+nav ul a:hover{
+    color: orange;
+}
+@media screen and (max-width:800px){
+    nav ul{
+        display: none;
+    }
+}
+.container nav.row div{
+    display: flex;
+    gap: 30px;
+    align-items: center ;
+}
+.avatar{
+    height: 40px;
+}
+nav hr{
+    border-color: rgb(168, 168, 168);
+}
+.icon-menu{
+    position: relative;
+    padding:0 10px;
+}
+.icons{
+    justify-content: end;
+}
+
+/* PHONE MENU */
+
+@media screen and (min-width:800px){
+    .container .row .icon-menu{
+        display: none;
+        position: absolute;
+    }
+}
+
+/* MAIN */
+
+main.row{
+    margin-top: 60px;
+    padding: 0 60px;
+    margin-bottom: 60px;
+}
+.image-products-mini{
+    display: flex;
+}
+@media screen and (max-width:800px){
+    .container main.row{
+        display: block;
+    }
+    .image-products-mini a img{
+        width: 0px;
+        height: 0px;
+    }
+    .image-products-sell figure img{
+        width: 100%;
+    }
+    main .col-6{
+        width: 100%;
+    }
+}
+main figure img{
+    border-radius: 20px;
+    max-width: 100%;
+}
+.image-products-mini img{
+    /* resized by css because the images came adjusted in different formats */
+    height: 72.5px;
+    width: 72.5px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.image-products-mini{
+    gap: 10px;
+}
+.logo{
+    max-width: 100%;
+}
+main.row .image-products-sell{
+    display: block;
+}
+.image-products-mini img:hover{
+    filter: opacity(30%);
+    border: orange 5px solid;
+}
+.text-products-sell{
+    font-size: 14px;
+    font-family: arial;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.text-products-sell .text-sell h3{
+    color: rgb(255, 145, 0);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.text-products-sell h2{
+    font: bold 40px arial;
+    margin-bottom: 30px;
+}
+.text-products-sell .text-sell p{
+    color: rgb(165, 165, 165);
+    font-family: arial;
+    margin-bottom: 30px;
+}
+.text-products-sell .prizes h3{
+    font: bold 20px arial;
+    color: #000;
+}
+.prizes{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.row .text-products-sell .prizes h3{
+    margin-bottom: 0;
+}
+.row .text-products-sell .prizes h4{
+    color: rgb(255, 145, 0);
+    background-color: rgb(255, 233, 205);
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+s{
+    font: bold 12px arial;
+    color: rgba(165, 165, 165, 70%);
+}
+.count-sell{
+    display: flex;
+    margin-top: 50px;
+    gap: 10%;
+    align-items: center;
+    text-align: center;
+}
+.count-sell div{
+    height: 40px;
+    width: 50%;
+    background-color: rgb(255, 123, 0);
+    text-align: center;
+    border-radius: 10px;
+}
+.count-sell div h3{
+    color: #000000;
+    font: bold 12px arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 39px;
+}
+.count-sell {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn-alugar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 45px;
+  width: 60%;
+  background-color: rgb(255, 123, 0);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font: bold 14px Arial;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-alugar h3{
+    font: bold 18px arial;
+}
+
+.btn-alugar::before {
+  background: url(../images/icon-cart.svg);
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.btn-alugar:hover {
+  background-color: rgb(255, 145, 0);
+  transform: scale(1.03);
+}
+/* === LISTAGEM DE CARROS === */
+.main-cars {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.main-cars h2 {
+    font-weight: 700;
+    color: #333;
+}
+
+.car-card {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-box {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.car-box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.car-box img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.car-box h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #000;
+}
+
+.car-box p {
+    color: #8a8a8a;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: #ff7d1a;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.car-link {
+    text-decoration: none;
+    color: inherit;
+}
+/* FORMULÁRIO DE ALUGUEL */
+.formulario-aluguel {
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.formulario-aluguel h2 {
+    font-size: 28px;
+    color: #FF7B00;
+    margin-bottom: 10px;
+}
+
+.formulario-aluguel p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Caixa principal */
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-box label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-box select,
+.form-box input[type="date"],
+.form-box input[type="text"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Botão */
+.btn-confirmar {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: #FF7B00;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-confirmar:hover {
+    opacity: 0.9;
+}
+/* PAINEL ADMIN */
+.painel-admin {
+    margin-top: 40px;
+    max-width: 800px;
+}
+
+.painel-admin h2 {
+    font-size: 28px;
+    color: #FF7B00;
+    margin-bottom: 10px;
+}
+
+.painel-admin p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Caixas (mesmo estilo das páginas anteriores) */
+.box-admin {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* Botões administrativos */
+.btn-admin {
+    padding: 12px;
+    background-color: #FF7B00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btn-admin:hover {
+    opacity: 0.9;
+}
+
+/* Formulário */
+.form-add-car {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-add-car input,
+.form-add-car textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* SWITCH BUTTON (desconto) */
+.switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 30px;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #FF7B00;
+}
+
+input:checked + .slider:before {
+    transform: translateX(28px);
+}
+
+.switch-label {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #444;
+}
+/* Filtros de Relatório */
+.filtro-relatorio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    max-width: 350px;
+}
+
+.campo-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-data label {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.campo-data input[type="date"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsivo */
+@media (min-width: 700px) {
+    .filtro-relatorio {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    
+    .campo-data {
+        flex: 1;
+    }
+}
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #333;
+}
+
+/* ======= NAVBAR ======= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+}
+
+.logo {
+    height: 55px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* ======= CONTAINER ======= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.titulo-pagina {
+    font-size: 28px;
+    color: #f57c00;
+    margin-bottom: 6px;
+}
+
+.subtitulo-pagina {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* ======= FORM CONTAINER ======= */
+
+.form-box {
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* ======= INPUTS ======= */
+
+input, select {
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.2s;
+    background: #fff;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.15);
+}
+
+/* ======= CHECKBOX ======= */
+
+.checkbox-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 26px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ======= BOTÃO SUBMIT ======= */
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: #0a8045;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-submit:hover {
+    background: #066b39;
+}
+
+/* ======= RESPONSIVO ======= */
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+}

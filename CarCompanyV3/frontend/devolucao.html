@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Company | Devolução</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <!-- NAVBAR -->
+    <nav class="row">
+      <div class="icon-menu col-sm-1 col-1">
+        <h1><img src="images/icon-menu.svg" alt="" style="max-width: 100%"></h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img src="images/logo.png" alt="" style="max-width: 50%">
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-1 col-1">
+        <ul>
+          <a href="index.html"><li>Carros</li></a>
+          <a href="alugar.html"><li>Aluguel</li></a>
+          <a href="consultas.html"><li>Consultas</li></a>
+          <a href="devolucao.html"><li>Devolução</li></a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-1 col-sm-1 col-1"></div>
+      <hr>
+    </nav>
+
+    <!-- CONTEÚDO -->
+    <main class="container">
+
+        <h1 class="titulo-pagina">Formulário de Devolução</h1>
+        <p class="subtitulo-pagina">
+            Preencha os dados abaixo para registrar a devolução do veículo.
+        </p>
+
+        <form id="formDevolucao" class="form-box">
+
+            <!-- LINHA 1: Locação + Data -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="selectLocacao">Locação</label>
+                    <select id="selectLocacao">
+                        <option value="">Carregando...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_devolucao">Data da Devolução *</label>
+                    <input type="date" id="data_devolucao" required>
+                </div>
+
+            </div>
+
+            <!-- ESTADO DO CARRO -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="selectEstado">Estado do Carro</label>
+                    <select id="selectEstado">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Data Prevista de Devolução</label>
+                    <input type="text" id="data_prevista" readonly placeholder="Selecione uma locação">
+                </div>
+
+            </div>
+
+            <!-- VALOR FINAL + COMBUSTÍVEL -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Valor Final</label>
+                    <input type="text" id="valorFinal" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="selectCombustivel">Combustível Completo</label>
+                    <select id="selectCombustivel">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- BOTÃO -->
+            <button type="submit" class="btn-submit">CONFIRMAR DEVOLUÇÃO</button>
+
+            <!-- MENSAGEM -->
+            <p id="mensagem" class="mensagem-retorno"></p>
+        </form>
+
+
+    
+        <section id="secaoPagamento" class="form-box" style="margin-top: 25px; display: none;">
+            <h2 style="color:#f57c00; margin-bottom:10px;">Pagamento da Devolução</h2>
+            <p>Se houver valores a pagar (danos, multa, etc.), gere o QR Code abaixo:</p>
+
+            <button id="btnGerarPagamento" class="btn-submit" style="background:#ff7b00;">
+                GERAR QR CODE DE PAGAMENTO
+            </button>
+
+            <div id="areaQrcode" style="text-align:center; margin-top:20px; display:none;">
+                <h3 style="margin-bottom:12px;">QR Code de Pagamento</h3>
+                <img id="qrcodeImagem" src="" alt="QR Code de Pagamento" style="max-width:220px;">
+                <p style="margin-top:10px; color:#555;">Use o app do seu banco para pagar.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="js/devolucao.js"></script>
+</body>
+</html>

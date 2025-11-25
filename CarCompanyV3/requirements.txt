@@ -1,0 +1,14 @@
+# ============================================================
+# DependÃªncias do Projeto CarCompanyV3
+# Sistema de Gerenciamento de Locadora de Carros
+# ============================================================
+
+# Framework Web
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# CORS (Cross-Origin Resource Sharing)
+Flask-Cors==4.0.0
+
+# Banco de Dados PostgreSQL
+psycopg2-binary==2.9.9

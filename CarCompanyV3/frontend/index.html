@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Company - Carros Disponíveis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    <!-- NAVBAR -->
+    <nav class="row">
+      <div class="icon-menu col-sm-1 col-1">
+        <h1><img src="images/icon-menu.svg" alt="" style="max-width: 100%"></h1>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+        <img src="images/logo.png" alt="" style="max-width: 50%">
+      </div>
+      <div class="col-lg-5 col-md-4 col-sm-1 col-1">
+        <ul>
+          <a href="index.html"><li>Carros</li></a>
+          <a href="alugar.html"><li>Aluguel</li></a>
+          <a href="consultas.html"><li>Consultas</li></a>
+          <a href="devolucao.html"><li>Devolução</li></a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-1 col-sm-1 col-1"></div>
+      <hr>
+    </nav>
+
+    <!-- LISTA DE CARROS (DINÂMICA) -->
+    <main class="main-cars container">
+        <div id="lista-carros" class="row justify-content-center">
+            <!-- Aqui o JS vai inserir os cards -->
+        </div>
+    </main>
+
+    <!-- JS QUE CARREGA OS CARROS -->
+    <script src="js/carros.js"></script>
+
+</body>
+</html>
